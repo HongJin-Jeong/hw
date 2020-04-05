@@ -1,0 +1,34 @@
+let s1 = "When I find myself in times of trouble Mother Mary comes to me Speaking words of wisdom, let it be.";
+for(let i=0;i<s1.length;++i)
+{
+    if(s1[i]=='a'){
+        console.log("a문자열위치"+i);
+    }
+    if(s1[i]=='e'){
+        console.log("e문자열위치"+i);
+    }
+    if(s1[i]=='i'){
+        console.log("i문자열위치"+i);
+    }
+    if(s1[i]=='o'){
+        console.log("o문자열위치"+i);
+    }
+    if(s1[i]=='u'){
+        console.log("u문자열위치"+i);
+    }
+    if(s1[i]=='A'){
+        console.log("A문자열위치"+i);
+    }
+    if(s1[i]=='E'){
+        console.log("E문자열위치"+i);
+    }
+    if(s1[i]=='I'){
+        console.log("I문자열위치"+i);
+    }
+    if(s1[i]=='O'){
+        console.log("O문자열위치"+i);
+    }
+    if(s1[i]=='U'){
+        console.log("U문자열위치"+i);
+    }
+}
