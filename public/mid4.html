@@ -29,17 +29,25 @@
       el: '#app',
       data: {
         visible: false,
-        check: false
+        check: false,
       },
       methods: {
         getColor() {
-          return this.visible ? "#00F5FF" : "#fff";
+            if(this.visible==false){
+                return "#fff";
+            }else if(this.visible=='남자')
+            {
+                return "#00F5FF";
+            }else{
+                return "#FFC0CB";
+            }
         },
         increase(){
             this.check =true;
         },
         decrease(){
-            return this.visible ? "#FFC0CB" : "#fff";
+
+            
         }
 
       }
