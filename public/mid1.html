@@ -14,11 +14,10 @@
 </head>
 <body>
   <div id="app">
-    <span v-model="num">
+    <span v-model="num" v-on:click="increase">
         {{num}}
     </span>
     <br>
-    <button type="button" v-on:click="increase">++</button>
   </div>
 
   <script type="text/javascript">
