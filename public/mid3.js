@@ -7,7 +7,7 @@ for(let i=0;i<3;++i){
     j=j+2;
     k=k+2;
 }
-let a2=a1;
+let a2=JSON.parse(JSON.stringify(a1));
 a1[0][0]=100;
 
 console.log(a1);
