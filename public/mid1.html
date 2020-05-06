@@ -1,0 +1,38 @@
+<html>
+<head>
+  <meta charset="utf-8" />
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <style>
+    div#app { padding: 50px; margin: 30px auto; max-width: 600px; 
+      border: 1px solid #ccc; box-shadow: 3px 3px 3px #aaa; font-size: 11pt; }
+    input { padding: 6px; width: 200px; }
+    div.error { background-color: #fcc; border: 1px solid red; 
+      padding: 10px; max-width: 500; margin-top: 30px; }
+      span {  border: 1px solid black;
+       margin: 5px ;padding: 8px 15px ;display: inline-block; background-color: #ffa ;} 
+  </style>
+</head>
+<body>
+  <div id="app">
+    <span v-model="num">
+        {{num}}
+    </span>
+    <br>
+    <button type="button" v-on:click="increase">++</button>
+  </div>
+
+  <script type="text/javascript">
+    var app = new Vue({
+      el: '#app',
+      data: {
+        num: 0
+      },
+      methods: {
+        increase() {
+          this.num++;
+        }
+      }
+    })    
+   </script>
+</body>    
+</html>

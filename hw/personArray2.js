@@ -1,4 +1,16 @@
 let persons1 = [];
+let a2 = newObj(firstValue);
+ 
+function newObj(param){
+    var result = [];
+        
+    $.each(param, function(idx, item){
+            result[idx] = param[idx];
+    });
+ 
+    result[0] = 'hello';
+    return result;
+};
 
 for(let i = 0 ; i<10 ; ++i){
     persons1[i]=[{name:"홍길동", age:16 + i}]
